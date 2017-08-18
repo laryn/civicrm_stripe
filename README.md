@@ -13,7 +13,7 @@ WEBHOOK & RECURRING PAYMENTS
 ---------
 The Webhook.php file is registered to the path of civicrm/stripe/webhook  
 You will have to make a Webhook rule in your Stripe.com account and enter this path for recurring charges to end!  
-For Drupal:  https://example.com/civicrm/stripe/webhook  
+For Drupal and Backdrop CMS:  https://example.com/civicrm/stripe/webhook  
 For Joomla:  https://example.com/index.php/component/civicrm/?task=civicrm/stripe/webhook  
 For Wordpress:  https://example.com/?page=CiviCRM&q=civicrm/stripe/webhook  
 
@@ -21,7 +21,7 @@ If you have multiple Stripe accounts on your site, you will need to specify the 
 To find the ID, look at the URL when you are editing the payment processor in CiviCRM: it should include `id=XX`, where `XX` is your payment processor ID.
 Add a URL parameter of `ppid=XX` to the webhook URL.
 For example, for a payment processor ID of 3, use the following:
-For Drupal:  https://example.com/civicrm/stripe/webhook?ppid=3
+For Drupal and Backdrop CMS:  https://example.com/civicrm/stripe/webhook?ppid=3
 For Joomla:  https://example.com/index.php/component/civicrm/?task=civicrm/stripe/webhook&ppid=3
 For Wordpress:  https://example.com/?page=CiviCRM&q=civicrm/stripe/webhook&ppid=3
 
